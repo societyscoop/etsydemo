@@ -24,10 +24,10 @@ gem 'bootstrap-sass', '~> 3.0.3.0'
 
 gem 'paperclip',github: 'thoughtbot/paperclip'
 
-#group :production do
- #  gem 'pg'
-  # gem 'rails_12factor'
-#end
+group :production do
+   gem 'pg'
+   gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'sqlite3'
