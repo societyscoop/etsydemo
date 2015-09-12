@@ -1,10 +1,9 @@
 source 'https://rubygems.org'
-
+ruby "2.2.1"
 
 
 gem 'rails', '4.2.3'
 
-gem 'sqlite3'
 
 gem 'sass-rails', '~> 5.0'
 
@@ -24,6 +23,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.0.3.0'
 
 gem 'paperclip',github: 'thoughtbot/paperclip'
+
+#group :production do
+ #  gem 'pg'
+  # gem 'rails_12factor'
+#end
+
+group :development, :test do
+  gem 'sqlite3'
+end
 
 group :development, :test do
  
